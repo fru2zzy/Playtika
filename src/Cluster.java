@@ -1,6 +1,6 @@
 import java.util.List;
 
-class Cluster extends ClusterItem {
+class Cluster {
 
     void sendMessage(ClusterItem clusterItem) {
         List<NodeItem> nodeItems = clusterItem.getNodeItems();
