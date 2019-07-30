@@ -1,3 +1,6 @@
+import dto.ClusterItem;
+import dto.NodeItem;
+
 import java.util.List;
 
 class Cluster {

@@ -1,3 +1,6 @@
+import dto.ClusterItem;
+import dto.NodeItem;
+
 public interface Failable {
 
     boolean isFailed(ClusterItem clusterItem, int serverId, int nodeId) throws Exception;

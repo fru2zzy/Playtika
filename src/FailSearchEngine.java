@@ -1,10 +1,16 @@
+import customExceptions.NoDataException;
+import customExceptions.SuccessException;
+import dto.ClusterItem;
+import customExceptions.DataNotFoundException;
+import dto.NodeItem;
+
 import java.util.List;
 
 public class FailSearchEngine implements Failable {
 
     public NodeItem findDisconnectedNode(ClusterItem clusterItem) throws Exception {
         List<NodeItem> nodeItems = clusterItem.getNodeItems();
-        if (nodeItems.isEmpty()) throw new Exception("Cannot perform search in empty array!");
+        if (nodeItems.isEmpty()) throw new NoDataException("Cannot perform search in empty array!");
 
 
         int iteration = 0, startIndex, endIndex;
@@ -64,14 +70,14 @@ public class FailSearchEngine implements Failable {
 
             if (iteration == nodeItems.size()) {
                 if (endIndex - startIndex == 1) { // Reached the end of binary search without any match found
-                    throw new Exception("Cannot find disconnected node, all nodes working fine");
+                    throw new SuccessException();
                 } else {
                     System.out.println("\nWe've found a disconnected node in " + iteration + " iteration(s)");
                     return nodeItems.get(0); // Case when all nodes are disconnected
                 }
             }
         }
-        throw new Exception("Cannot find disconnected node!");
+        throw new DataNotFoundException("Cannot find disconnected node!");
     }
 
     public boolean isFailed(ClusterItem clusterItem, int serverId, int nodeId) throws Exception {

@@ -1,3 +1,5 @@
+package dto;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,11 +13,11 @@ public class ClusterItem {
     ClusterItem() {
     }
 
-    ClusterItem(int serversCount, int nodesCount) {
+    public ClusterItem(int serversCount, int nodesCount) {
         initializeCluster(serversCount, nodesCount);
     }
 
-    List<ServerItem> getServerItems() {
+    public List<ServerItem> getServerItems() {
         return serverItems;
     }
 
@@ -39,7 +41,7 @@ public class ClusterItem {
         clusterItem.setServerItems(serverItems);
     }
 
-    List<NodeItem> getNodeItems() {
+    public List<NodeItem> getNodeItems() {
         List<NodeItem> nodeItems = new ArrayList<>();
 
         for (ServerItem serverItem : getServerItems()) {
@@ -50,6 +52,6 @@ public class ClusterItem {
 
     @Override
     public String toString() {
-        return "ClusterItem{" + "serverItems=" + serverItems + '}';
+        return "ClusterItem {" + "serverItems=" + serverItems + '}';
     }
 }

@@ -1,3 +1,5 @@
+package dto;
+
 public class NodeItem {
 
     private int id;
@@ -12,24 +14,24 @@ public class NodeItem {
         this.isDisconnected = false;
     }
 
-    int getId() {
+    public int getId() {
         return id;
     }
 
-    int getParentId() {
+    public int getParentId() {
         return parentId;
     }
 
-    void setDisconnected() {
+    public void setDisconnected() {
         isDisconnected = true;
     }
 
-    boolean isDisconnected() {
+    public boolean isDisconnected() {
         return isDisconnected;
     }
 
     @Override
     public String toString() {
-        return "NodeItem{" + "id=" + id + ", parentId=" + parentId + ", isDisconnected=" + isDisconnected + '}';
+        return "NodeItem {" + "id=" + id + ", parentId=" + parentId + ", isDisconnected=" + isDisconnected + '}';
     }
 }
