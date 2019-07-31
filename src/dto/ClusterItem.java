@@ -8,6 +8,7 @@ public class ClusterItem {
     private ClusterItem clusterItem;
     private List<ServerItem> serverItems;
     private int CURRENT_SERVER_ID;
+    private int CURRENT_NODE_ID;
 
 
     ClusterItem() {
@@ -32,8 +33,8 @@ public class ClusterItem {
         for (int i = 0; i < serversCount; i++) {
             List<NodeItem> nodes = new ArrayList<>();
             for (int j = 0; j < nodesCount; j++) {
-                nodes.add(new NodeItem(NodeItem.CURRENT_NODE_ID, CURRENT_SERVER_ID));
-                NodeItem.CURRENT_NODE_ID++;
+                nodes.add(new NodeItem(CURRENT_NODE_ID, CURRENT_SERVER_ID));
+                CURRENT_NODE_ID++;
             }
             serverItems.add(new ServerItem(CURRENT_SERVER_ID, nodes));
             CURRENT_SERVER_ID++;

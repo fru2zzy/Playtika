@@ -1,7 +1,7 @@
+import customExceptions.DataNotFoundException;
 import customExceptions.NoDataException;
 import customExceptions.SuccessException;
 import dto.ClusterItem;
-import customExceptions.DataNotFoundException;
 import dto.NodeItem;
 
 import java.util.List;
@@ -78,6 +78,18 @@ public class FailSearchEngine implements Failable {
             }
         }
         throw new DataNotFoundException("Cannot find disconnected node!");
+    }
+
+    NodeItem findDisconnectedNodeIteratively(ClusterItem clusterItem) {
+        List<NodeItem> nodeItems = clusterItem.getNodeItems();
+        for (int i = 0; i < nodeItems.size(); i++) {
+            NodeItem node = nodeItems.get(i);
+            if (node.isDisconnected()) {
+                System.out.println("\nWe've found a disconnected node in " + i + " iteration(s)");
+                return node;
+            }
+        }
+        throw new DataNotFoundException("Cannot find disconnected node even in iteratively way!");
     }
 
     public boolean isFailed(ClusterItem clusterItem, int serverId, int nodeId) throws Exception {

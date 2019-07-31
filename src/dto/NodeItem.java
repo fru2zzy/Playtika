@@ -5,7 +5,6 @@ public class NodeItem {
     private int id;
     private int parentId;
     private boolean isDisconnected;
-    static int CURRENT_NODE_ID;
 
 
     NodeItem(int id, int parentId) {
