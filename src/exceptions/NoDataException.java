@@ -1,4 +1,4 @@
-package customExceptions;
+package exceptions;
 
 public class NoDataException extends RuntimeException {
     public NoDataException(String errorMessage) {

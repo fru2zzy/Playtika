@@ -1,39 +1,32 @@
-import customExceptions.DataNotFoundException;
-import customExceptions.NoDataException;
-import customExceptions.SuccessException;
-import dto.ClusterItem;
-import dto.NodeItem;
-
-import java.util.Random;
+import exceptions.DataNotFoundException;
+import exceptions.NoDataException;
+import search.FailSearchEngine;
+import search.Result;
+import servers.Cluster;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-        Cluster cluster = new Cluster();
+    public static void main(String[] args) {
+        Cluster cluster = new Cluster(5, 3);
 
-        Random random = new Random();
-        int randomServerCount = random.nextInt(3);
-        int randomNodesCount = random.nextInt(5);
-
-        ClusterItem clusterItem = new ClusterItem(randomServerCount, randomNodesCount);
-
-        cluster.sendMessage(clusterItem);
+        cluster.sendMessage();
+        System.out.println(cluster);
 
         FailSearchEngine searchEngine = new FailSearchEngine();
-        NodeItem disconnectedNode = null;
+
+        Result result;
         try {
-            disconnectedNode = searchEngine.findDisconnectedNode(clusterItem);
+            result = searchEngine.findFailIterativelly(cluster); // result = searchEngine.findFail(cluster);
         } catch (NoDataException noDataException) {
             System.out.println("Warning, no data provided, initialize by default values: serversCount = 3, nodesCount = 5");
-            clusterItem = new ClusterItem(3, 5);
-            cluster.sendMessage(clusterItem);
-            disconnectedNode = searchEngine.findDisconnectedNode(clusterItem);
-        } catch (DataNotFoundException dataNotFoundException) {
-            disconnectedNode = searchEngine.findDisconnectedNodeIteratively(clusterItem);
-        } catch (SuccessException successException) {
-            System.out.println(successException.getMessage());
-        }
 
-        if (disconnectedNode != null) System.out.println("Our disconnected node is: " + disconnectedNode);
+            cluster = new Cluster(3, 5);
+
+            cluster.sendMessage();
+            result = searchEngine.findFail(cluster);
+        } catch (DataNotFoundException dataNotFoundException) {
+            result = searchEngine.findFailIterativelly(cluster);
+        }
+        System.out.println(result);
     }
 }
