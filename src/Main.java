@@ -1,32 +1,39 @@
-import exceptions.DataNotFoundException;
-import exceptions.NoDataException;
-import search.FailSearchEngine;
-import search.Result;
-import servers.Cluster;
+import customExceptions.DataNotFoundException;
+import customExceptions.NoDataException;
+import customExceptions.SuccessException;
+import dto.ClusterItem;
+import dto.NodeItem;
+
+import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Cluster cluster = new Cluster(5, 3);
+    public static void main(String[] args) throws Exception {
+        Cluster cluster = new Cluster();
 
-        cluster.sendMessage();
-        System.out.println(cluster);
+        Random random = new Random();
+        int randomServerCount = random.nextInt(3);
+        int randomNodesCount = random.nextInt(5);
+
+        ClusterItem clusterItem = new ClusterItem(randomServerCount, randomNodesCount);
+
+        cluster.sendMessage(clusterItem);
 
         FailSearchEngine searchEngine = new FailSearchEngine();
-
-        Result result;
+        NodeItem disconnectedNode = null;
         try {
-            result = searchEngine.findFailIterativelly(cluster); // result = searchEngine.findFail(cluster);
+            disconnectedNode = searchEngine.findDisconnectedNode(clusterItem);
         } catch (NoDataException noDataException) {
             System.out.println("Warning, no data provided, initialize by default values: serversCount = 3, nodesCount = 5");
-
-            cluster = new Cluster(3, 5);
-
-            cluster.sendMessage();
-            result = searchEngine.findFail(cluster);
+            clusterItem = new ClusterItem(3, 5);
+            cluster.sendMessage(clusterItem);
+            disconnectedNode = searchEngine.findDisconnectedNode(clusterItem);
         } catch (DataNotFoundException dataNotFoundException) {
-            result = searchEngine.findFailIterativelly(cluster);
+            disconnectedNode = searchEngine.findDisconnectedNodeIteratively(clusterItem);
+        } catch (SuccessException successException) {
+            System.out.println(successException.getMessage());
         }
-        System.out.println(result);
+
+        if (disconnectedNode != null) System.out.println("Our disconnected node is: " + disconnectedNode);
     }
 }
