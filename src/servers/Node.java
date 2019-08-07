@@ -41,6 +41,6 @@ public class Node implements Failable {
 
     @Override
     public String toString() {
-        return (failed ? "\u001B[31m" : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + "\u001B[0m";
+        return (failed ? "\u001B[31m" : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + (failed ? "\u001B[0m" : "");
     }
 }

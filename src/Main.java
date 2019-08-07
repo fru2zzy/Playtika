@@ -16,7 +16,7 @@ public class Main {
 
         Result result;
         try {
-            result = searchEngine.findFailIterativelly(cluster); // result = searchEngine.findFail(cluster);
+            result = searchEngine.findFail(cluster);
         } catch (NoDataException noDataException) {
             System.out.println("Warning, no data provided, initialize by default values: serversCount = 3, nodesCount = 5");
 

@@ -25,9 +25,6 @@ public class Result {
 
     @Override
     public String toString() {
-        return "Failed items were: {" +
-                "failedServer=" + failedServer +
-                ", failedNode=" + failedNode +
-                '}';
+        return "Failed items were: {failedServer=" + failedServer + ", failedNode=" + failedNode + '}';
     }
 }
