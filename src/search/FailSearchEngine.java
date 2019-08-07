@@ -2,6 +2,7 @@ package search;
 
 import exceptions.DataNotFoundException;
 import servers.Failable;
+import utils.CustomOptional;
 
 public class FailSearchEngine {
 
@@ -18,7 +19,10 @@ public class FailSearchEngine {
         while (end - start > 1) {
             count++;
             mid = (start + end) / 2;
-            isFailed = currentFailable.getInnerFallible(mid).isFailed();
+            CustomOptional<Failable> inner = currentFailable.getInnerFallible(mid);
+            if (inner.isPresent()) {
+                isFailed = inner.get().isFailed();
+            }
             if (isFailed) {
                 end = mid;
             } else {
@@ -37,7 +41,7 @@ public class FailSearchEngine {
             failedIndex = end;
         }
 
-        Failable inner = currentFailable.getInnerFallible(failedIndex);
+        Failable inner = (Failable) currentFailable.getInnerFallible(failedIndex).get();
         boolean hasInner = inner != null && inner.getInnerFallible(0) != null;
         if (hasInner) {
             findFail(inner);
@@ -54,12 +58,16 @@ public class FailSearchEngine {
     }
 
     private int verifyBoundaryCondition(Failable currentFailable, int start, int mid) {
-        int failedIndex;
-        boolean isFailed = currentFailable.getInnerFallible(start).isFailed();
-        if (isFailed) {
-            failedIndex = start;
-        } else {
-            failedIndex = mid;
+        int failedIndex = 0;
+        CustomOptional<Failable> inner = currentFailable.getInnerFallible(mid);
+        if (inner.isPresent()) {
+            boolean isFailed = inner.get().isFailed();
+            if (isFailed) {
+                failedIndex = start;
+            } else {
+                failedIndex = mid;
+            }
+            return failedIndex;
         }
         return failedIndex;
     }
@@ -68,18 +76,20 @@ public class FailSearchEngine {
         boolean isFailed;
         for (int i = 0; i < currentFailable.getSize(); i++) {
             count++;
-            Failable inner = currentFailable.getInnerFallible(i);
-            isFailed = currentFailable.getInnerFallible(i).isFailed();
-            if (isFailed) {
-                boolean hasInner = inner != null && inner.getInnerFallible(0) != null;
-                if (hasInner) {
-                    findFailIterativelly(inner);
-                    break;
-                } else {
-                    System.out.println("We've reached last nested failed element (Node) in " + count + " iterations");
-                    result.setFailedServer(inner.getParentId());
-                    result.setFailedNode(inner.getId());
-                    break;
+            CustomOptional<Failable> inner = currentFailable.getInnerFallible(i);
+            if (inner.isPresent()) {
+                isFailed = inner.get().isFailed();
+                if (isFailed) {
+                    boolean hasInner = inner.get().getInnerFallible(0) != null;
+                    if (hasInner) {
+                        findFailIterativelly(inner.get());
+                        break;
+                    } else {
+                        System.out.println("We've reached last nested failed element (Node) in " + count + " iterations");
+                        result.setFailedServer(inner.get().getParentId());
+                        result.setFailedNode(inner.get().getId());
+                        break;
+                    }
                 }
             }
         }

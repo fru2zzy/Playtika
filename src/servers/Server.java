@@ -1,5 +1,7 @@
 package servers;
 
+import utils.CustomOptional;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -9,15 +11,18 @@ public class Server implements Failable {
     private int id;
     private int parentId;
     private boolean failed;
-    private final List<Node> nodes;
+    private final List<CustomOptional<Failable>> nodes;
     private final Random random = new Random();
+    private boolean transactionPassed;
 
     Server(int id, int parentId, int nodesCount) {
         this.id = id;
         this.parentId = parentId;
         nodes = new ArrayList<>(nodesCount);
         for (int i = 0; i < nodesCount; i++) {
-            nodes.add(new Node(id, i));
+            Node node = new Node(id, i);
+            CustomOptional<Failable> optionalNode = new CustomOptional<>(node);
+            nodes.add(optionalNode);
         }
     }
 
@@ -37,7 +42,7 @@ public class Server implements Failable {
     }
 
     @Override
-    public Failable getInnerFallible(int number) {
+    public CustomOptional getInnerFallible(int number) {
         return nodes.get(number);
     }
 
@@ -47,17 +52,22 @@ public class Server implements Failable {
     }
 
     void failRandomNode() {
-        this.failed = true;
-        int randomNode = random.nextInt(getSize());
-        for (int i = randomNode; i < getSize(); i++) {
-            nodes.get(i).failNode();
-        }
+        failNodes(true);
     }
 
     void failAllNodes() {
+        failNodes(false);
+    }
+
+    private void failNodes(boolean failRandomNode) {
         this.failed = true;
-        for (int i = 0; i < getSize(); i++) {
-            nodes.get(i).failNode();
+        int iteratorStart = failRandomNode ? random.nextInt(getSize()) : 0;
+        for (int i = iteratorStart; i < getSize(); i++) {
+            CustomOptional<Failable> tempNode = nodes.get(i);
+            if (tempNode.isPresent()) {
+                Node node = (Node) tempNode.get();
+                node.failNode();
+            }
         }
     }
 

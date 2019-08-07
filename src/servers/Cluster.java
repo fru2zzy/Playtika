@@ -1,6 +1,7 @@
 package servers;
 
 import exceptions.NoDataException;
+import utils.CustomOptional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +11,14 @@ public class Cluster implements Failable {
 
     private final Random random = new Random();
     private boolean failed;
-    private final List<Server> servers = new ArrayList<>();
+    private final List<CustomOptional<Failable>> servers = new ArrayList<>();
 
 
     public Cluster(int serversCount, int nodesCount) {
         for (int i = 0; i < serversCount; i++) {
-            servers.add(new Server(i, i, nodesCount));
+            Server server = new Server(i, i, nodesCount);
+            CustomOptional<Failable> optionalServer = new CustomOptional<>(server);
+            servers.add(optionalServer);
         }
     }
 
@@ -35,7 +38,7 @@ public class Cluster implements Failable {
     }
 
     @Override
-    public Failable getInnerFallible(int number) {
+    public CustomOptional getInnerFallible(int number) {
         return servers.get(number);
     }
 
@@ -50,10 +53,18 @@ public class Cluster implements Failable {
             throw new NoDataException("Cannot perform search in empty servers array!");
         }
         int randomServer = random.nextInt(getSize());
-        servers.get(randomServer).failRandomNode();
+        CustomOptional<Failable> optionalServer = servers.get(randomServer);
+        if (optionalServer.isPresent()) {
+            Server server = (Server) optionalServer.get();
+            server.failRandomNode();
+        }
         if (randomServer != getSize()) {
             for (int i = randomServer + 1; i < getSize(); i++) {
-                servers.get(i).failAllNodes();
+                optionalServer = servers.get(i);
+                if (optionalServer.isPresent()) {
+                    Server server = (Server) optionalServer.get();
+                    server.failAllNodes();
+                }
             }
         }
     }

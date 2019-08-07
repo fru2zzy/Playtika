@@ -1,5 +1,7 @@
 package servers;
 
+import utils.CustomOptional;
+
 public interface Failable {
 
     int getId();
@@ -8,7 +10,7 @@ public interface Failable {
 
     boolean isFailed();
 
-    Failable getInnerFallible(int number);
+    CustomOptional getInnerFallible(int number);
 
     int getSize();
 }

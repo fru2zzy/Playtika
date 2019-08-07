@@ -1,10 +1,13 @@
 package servers;
 
-public class Node implements Failable {
+import utils.CustomOptional;
+
+public class Node implements Failable, Transactionable {
 
     private int id;
     private int parentId;
     private boolean failed;
+    private boolean transactionPassed;
 
     Node(int parentId, int id) {
         this.parentId = parentId;
@@ -26,8 +29,8 @@ public class Node implements Failable {
     }
 
     @Override
-    public Failable getInnerFallible(int number) {
-        return null; // No inners
+    public CustomOptional getInnerFallible(int number) {
+        return CustomOptional.empty(); // No inners
     }
 
     @Override
@@ -41,6 +44,11 @@ public class Node implements Failable {
 
     @Override
     public String toString() {
-        return (failed ? "\u001B[31m" : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + "\u001B[0m";
+        return (failed ? "\u001B[31m" : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + (failed ? "\u001B[0m" : "");
+    }
+
+    @Override
+    public boolean isTransactionPassed() {
+        return transactionPassed;
     }
 }
