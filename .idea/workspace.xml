@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763cb234-990a-43a2-8ef2-a71ba01fd9a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/search/FailSearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/FailSearchEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playtika.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Playtika.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Playtika/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +19,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="24" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="24" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -35,13 +38,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="4118" />
+          <entry key="java" value="4962" />
+          <entry key="txt" value="15" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4118" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="4962" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -53,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +83,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servers/Cluster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="291">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1617#1618#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servers/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="354">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -104,16 +114,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servers/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="1113">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="e#1465#1466#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/search/FailSearchEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="-1137">
               <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
@@ -134,6 +147,7 @@
       <find>getNodeItemByID</find>
       <find>failed</find>
       <find>prevIsFailed</find>
+      <find>Server</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,19 +165,19 @@
         <option value="$PROJECT_DIR$/src/FallibleWithInners.java" />
         <option value="$PROJECT_DIR$/src/servers/FallibleWithInners.java" />
         <option value="$PROJECT_DIR$/src/servers/Failable.java" />
-        <option value="$PROJECT_DIR$/src/servers/Node.java" />
         <option value="$PROJECT_DIR$/src/exceptions/DataNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/exceptions/NoDataException.java" />
-        <option value="$PROJECT_DIR$/src/servers/Cluster.java" />
-        <option value="$PROJECT_DIR$/src/servers/Server.java" />
         <option value="$PROJECT_DIR$/src/search/Result.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/search/FailSearchEngine.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/servers/Cluster.java" />
+        <option value="$PROJECT_DIR$/src/servers/Node.java" />
+        <option value="$PROJECT_DIR$/src/servers/Server.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1052" />
   </component>
@@ -192,13 +206,11 @@
               <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
               <item name="Playtika" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -209,11 +221,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565127377293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565300778393" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/libs/gson-2.2.2.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19259259" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Playtika\Playtika\src\lib" />
+      <recent name="C:\Users\User\IdeaProjects\Playtika\Playtika" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Playtika\Playtika" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,13 +277,21 @@
       <option name="presentableId" value="Default" />
       <updated>1564002131765</updated>
     </task>
+    <task id="LOCAL-00001" summary="added Optional">
+      <created>1565296654600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565296654600</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1203125" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2920168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,8 +300,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32889345" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27642277" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42682928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27868852" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41971543" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -291,6 +321,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added Optional" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Optional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,54 +353,59 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>inner</expression-string>
+        <expression-string>cluster2</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentFailable.getInnerFallible(i);</expression-string>
+        <expression-string>gson.fromJson(new FileReader(&quot;C:\\cluster.json&quot;), Cluster.class);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentFailable.getInnerFallible(0)</expression-string>
+        <expression-string>new File(jsonInString);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentFailable.getInnerFallible(1)</expression-string>
+        <expression-string>jsonInString</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentFailable</expression-string>
+        <expression-string>gson.toJson(cluster.toString(), new FileWriter(&quot;C:\\cluster.json&quot;));</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>currentFailable.g</expression-string>
+        <expression-string>gson.fromJson(jsonInString, Cluster.class);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Cluster) currentFailable).servers</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>servers.Cluster</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result.isEmpty()</expression-string>
+        <expression-string>gson.toJson(cluster);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result.isEmpty</expression-string>
+        <expression-string>gson.toJson(cluster, new FileWriter(&quot;C:\\cluster.json&quot;));</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mapper.readValue(new File(&quot;c:\\cluster.json&quot;), Cluster.class);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -407,10 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/search/FailSearchEngine.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -421,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servers/Cluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servers/Failable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -435,27 +467,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servers/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/servers/Cluster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servers/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="291">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servers/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servers/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1465#1466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search/FailSearchEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1137">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -504,7 +557,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.19259259" />
               </list>
             </option>
           </splitter-proportions>
@@ -517,7 +570,6 @@
             <option name="proportions">
               <list>
                 <option value="0.19259259" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -537,10 +589,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>libs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.19259259" />
               </list>
             </option>
           </splitter-proportions>
