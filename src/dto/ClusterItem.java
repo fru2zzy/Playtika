@@ -2,27 +2,30 @@ package dto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 
 public class ClusterItem {
 
     private ClusterItem clusterItem;
-    private List<ServerItem> serverItems;
+    private List<Optional<ServerItem>> serverItems;
     private int CURRENT_SERVER_ID;
     private int CURRENT_NODE_ID;
+    private static final Random RANDOM = new Random();
 
 
-    ClusterItem() {
+    private ClusterItem() {
     }
 
     public ClusterItem(int serversCount, int nodesCount) {
         initializeCluster(serversCount, nodesCount);
     }
 
-    public List<ServerItem> getServerItems() {
+    private List<Optional<ServerItem>> getServerItems() {
         return serverItems;
     }
 
-    private void setServerItems(List<ServerItem> serverItems) {
+    private void setServerItems(List<Optional<ServerItem>> serverItems) {
         this.serverItems = serverItems;
     }
 
@@ -31,22 +34,28 @@ public class ClusterItem {
         serverItems = new ArrayList<>();
 
         for (int i = 0; i < serversCount; i++) {
-            List<NodeItem> nodes = new ArrayList<>();
+            List<Optional<NodeItem>> nodes = new ArrayList<>();
             for (int j = 0; j < nodesCount; j++) {
-                nodes.add(new NodeItem(CURRENT_NODE_ID, CURRENT_SERVER_ID));
+                if (RANDOM.nextBoolean()) {
+                    NodeItem node = new NodeItem(CURRENT_NODE_ID, CURRENT_SERVER_ID);
+                    nodes.add(Optional.of(node));
+                } else {
+                    nodes.add(null);
+                }
                 CURRENT_NODE_ID++;
             }
-            serverItems.add(new ServerItem(CURRENT_SERVER_ID, nodes));
+            ServerItem server = new ServerItem(CURRENT_SERVER_ID, nodes);
+            serverItems.add(Optional.of(server));
             CURRENT_SERVER_ID++;
         }
         clusterItem.setServerItems(serverItems);
     }
 
-    public List<NodeItem> getNodeItems() {
-        List<NodeItem> nodeItems = new ArrayList<>();
+    public List<Optional<NodeItem>> getNodeItems() {
+        List<Optional<NodeItem>> nodeItems = new ArrayList<>();
 
-        for (ServerItem serverItem : getServerItems()) {
-            nodeItems.addAll(serverItem.getNodeItems());
+        for (Optional<ServerItem> serverItem : getServerItems()) {
+            serverItem.ifPresent(serverItem1 -> nodeItems.addAll(serverItem1.getNodeItems()));
         }
         return nodeItems;
     }

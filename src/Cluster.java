@@ -2,19 +2,22 @@ import dto.ClusterItem;
 import dto.NodeItem;
 
 import java.util.List;
+import java.util.Optional;
 
 class Cluster {
 
     void sendMessage(ClusterItem clusterItem) {
-        List<NodeItem> nodeItems = clusterItem.getNodeItems();
+        List<Optional<NodeItem>> nodeItems = clusterItem.getNodeItems();
         int randomNodeIndex = (int) (Math.random() * nodeItems.size());
 
         for (int i = randomNodeIndex; i < nodeItems.size(); i++) {
-            NodeItem nodeToDisconnect = nodeItems.get(i);
+            Optional<NodeItem> nodeToDisconnect = nodeItems.get(i);
 
             // Set random node as disconnected
-            nodeToDisconnect.setDisconnected();
-            System.out.println("Node with id: '" + nodeToDisconnect.getId() + "' is Disconnected!");
+            if (Optional.ofNullable(nodeToDisconnect).isPresent()) { // WTF ? nodeToDisconnect.isPresent causes NPE  http://prntscr.com/oq8a0p
+                nodeToDisconnect.get().setDisconnected();
+                System.out.println("Node with id: '" + nodeToDisconnect.get().getId() + "' is Disconnected!");
+            }
         }
     }
 }

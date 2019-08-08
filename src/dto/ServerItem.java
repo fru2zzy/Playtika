@@ -3,23 +3,24 @@ package dto;
 import customExceptions.DataNotFoundException;
 
 import java.util.List;
+import java.util.Optional;
 
 public class ServerItem {
     private int id;
-    private List<NodeItem> nodeItems;
+    private List<Optional<NodeItem>> nodeItems;
 
-    public List<NodeItem> getNodeItems() {
+    List<Optional<NodeItem>> getNodeItems() {
         return nodeItems;
     }
 
-    public ServerItem(int id, List<NodeItem> nodeItems) {
+    ServerItem(int id, List<Optional<NodeItem>> nodeItems) {
         this.id = id;
         this.nodeItems = nodeItems;
     }
 
-    public NodeItem getNodeItemByID(int nodeId) throws Exception {
-        for (NodeItem node : nodeItems) {
-            if (node.getId() == nodeId) return node;
+    public Optional<NodeItem> getNodeItemByID(int nodeId) {
+        for (Optional<NodeItem> node : nodeItems) {
+            if (node.get().getId() == nodeId) return node;
         }
         throw new DataNotFoundException("Cannot find nodeId " + nodeId + " in requested list of node IDs: " + nodeItems);
     }
