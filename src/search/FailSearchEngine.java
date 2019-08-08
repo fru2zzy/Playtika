@@ -3,6 +3,8 @@ package search;
 import exceptions.DataNotFoundException;
 import servers.Failable;
 
+import java.util.Optional;
+
 public class FailSearchEngine {
 
     private int count;
@@ -43,8 +45,8 @@ public class FailSearchEngine {
             findFail(inner);
         } else {
             System.out.println("We've reached last nested failed element (Node): in " + count + " iterations");
-            result.setFailedServer(inner.getParentId());
-            result.setFailedNode(inner.getId());
+            result.setFailedServer(Optional.ofNullable(inner).isPresent() ? inner.getParentId() : -1);
+            result.setFailedNode(Optional.ofNullable(inner).isPresent() ? inner.getId() : -1);
         }
 
         if (result.isEmpty()) {
@@ -77,8 +79,8 @@ public class FailSearchEngine {
                     break;
                 } else {
                     System.out.println("We've reached last nested failed element (Node) in " + count + " iterations");
-                    result.setFailedServer(inner.getParentId());
-                    result.setFailedNode(inner.getId());
+                    result.setFailedServer(Optional.ofNullable(inner).isPresent() ? inner.getParentId() : -1);
+                    result.setFailedNode(Optional.ofNullable(inner).isPresent() ? inner.getId() : -1);
                     break;
                 }
             }
