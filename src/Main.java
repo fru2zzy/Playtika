@@ -6,10 +6,7 @@ import search.FailSearchEngine;
 import search.Result;
 import servers.Cluster;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 
 public class Main {
 
@@ -18,15 +15,18 @@ public class Main {
         Gson gson = new GsonBuilder().create();
 
         // Write our cluster into json file
-        Writer writer = new FileWriter("C:\\cluster.json");
+        Writer writer = new FileWriter("cluster.json");
         gson.toJson(originalCluster, writer);
         writer.flush();
         writer.close();
 
         // Read our cluster from json file
-        FileReader reader = new FileReader("C:\\cluster.json");
+        FileReader reader = new FileReader("cluster.json");
         Cluster cluster = gson.fromJson(reader, Cluster.class);
         reader.close();
+
+        File file = new File("cluster.json");
+        file.delete();
 
         cluster.sendMessage();
         System.out.println(cluster);
