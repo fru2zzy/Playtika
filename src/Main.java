@@ -45,7 +45,7 @@ public class Main {
             System.out.println("Our object 'game' is equal to 'gameXml' that means successful serialization / de-serialization");
             System.out.println(gameXml + "\n");
         } else {
-            throw new Exception("Something wrong with serialization by XML\nOriginal Object: " + game + "\nObject after de-serialization: " + gameJson);
+            throw new Exception("Something wrong with serialization by XML\nOriginal Object: " + game + "\nObject after de-serialization: " + gameXml);
         }
     }
 }
