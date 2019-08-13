@@ -19,6 +19,7 @@ public class Main {
 
         //JSON from file to Object
         Game gameJson = mapper.readValue(fileJson, Game.class);
+
         fileJson.delete();
 
         if (game.equals(gameJson)) {
@@ -32,13 +33,13 @@ public class Main {
 
         File fileXml = new File("game.xml");
 
-
         JAXBContext jaxbContext = JAXBContext.newInstance(Game.class);
         Marshaller marshaller = jaxbContext.createMarshaller();
         marshaller.marshal(game, fileXml);
 
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
         Game gameXml = (Game) unmarshaller.unmarshal(fileXml);
+
         fileXml.delete();
 
         if (game.equals(gameXml)) {
