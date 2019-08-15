@@ -37,7 +37,7 @@ public class Server implements Failable {
     }
 
     @Override
-    public Failable getInnerFallible(int number) {
+    public Failable getInnerFailable(int number) {
         return nodes.get(number);
     }
 

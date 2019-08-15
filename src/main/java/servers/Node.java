@@ -26,7 +26,7 @@ public class Node implements Failable {
     }
 
     @Override
-    public Failable getInnerFallible(int number) {
+    public Failable getInnerFailable(int number) {
         return null; // No inners
     }
 

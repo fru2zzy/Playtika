@@ -8,7 +8,7 @@ public interface Failable {
 
     boolean isFailed();
 
-    Failable getInnerFallible(int number);
+    Failable getInnerFailable(int number);
 
     int getSize();
 }

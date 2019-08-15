@@ -20,7 +20,7 @@ public class FailSearchEngine {
         while (end - start > 1) {
             count++;
             mid = (start + end) / 2;
-            isFailed = currentFailable.getInnerFallible(mid).isFailed();
+            isFailed = currentFailable.getInnerFailable(mid).isFailed();
             if (isFailed) {
                 end = mid;
             } else {
@@ -39,8 +39,8 @@ public class FailSearchEngine {
             failedIndex = end;
         }
 
-        Failable inner = currentFailable.getInnerFallible(failedIndex);
-        boolean hasInner = inner != null && inner.getInnerFallible(0) != null;
+        Failable inner = currentFailable.getInnerFailable(failedIndex);
+        boolean hasInner = inner != null && inner.getInnerFailable(0) != null;
         if (hasInner) {
             findFail(inner);
         } else {
@@ -57,7 +57,7 @@ public class FailSearchEngine {
 
     private int verifyBoundaryCondition(Failable currentFailable, int start, int mid) {
         int failedIndex;
-        boolean isFailed = currentFailable.getInnerFallible(start).isFailed();
+        boolean isFailed = currentFailable.getInnerFailable(start).isFailed();
         if (isFailed) {
             failedIndex = start;
         } else {
@@ -70,10 +70,10 @@ public class FailSearchEngine {
         boolean isFailed;
         for (int i = 0; i < currentFailable.getSize(); i++) {
             count++;
-            Failable inner = currentFailable.getInnerFallible(i);
-            isFailed = currentFailable.getInnerFallible(i).isFailed();
+            Failable inner = currentFailable.getInnerFailable(i);
+            isFailed = currentFailable.getInnerFailable(i).isFailed();
             if (isFailed) {
-                boolean hasInner = inner != null && inner.getInnerFallible(0) != null;
+                boolean hasInner = inner != null && inner.getInnerFailable(0) != null;
                 if (hasInner) {
                     findFailIterativelly(inner);
                     break;
