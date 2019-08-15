@@ -10,7 +10,7 @@ public class Cluster implements Failable {
 
     private final Random random = new Random();
     private boolean failed;
-    private final List<Server> servers = new ArrayList<>();
+    private final List<Server> servers = new ArrayList<Server>();
 
 
     public Cluster(int serversCount, int nodesCount) {
