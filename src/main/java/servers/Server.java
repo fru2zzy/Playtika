@@ -1,5 +1,7 @@
 package servers;
 
+import exceptions.NoDataException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -15,7 +17,11 @@ public class Server implements Failable {
     Server(int id, int parentId, int nodesCount) {
         this.id = id;
         this.parentId = parentId;
-        nodes = new ArrayList<>(nodesCount);
+        if (nodesCount >= 0) {
+            nodes = new ArrayList<>(nodesCount);
+        } else {
+            throw new IllegalArgumentException("Cannot initialize Server by " + nodesCount + " nodes count");
+        }
         for (int i = 0; i < nodesCount; i++) {
             nodes.add(new Node(id, i));
         }
@@ -38,7 +44,11 @@ public class Server implements Failable {
 
     @Override
     public Failable getInnerFailable(int number) {
-        return nodes.get(number);
+        if (nodes.size() > number) {
+            return nodes.get(number);
+        } else {
+            throw new NoDataException("Cannot get " + number + " inner Failable because nodes size = " + nodes.size());
+        }
     }
 
     @Override
