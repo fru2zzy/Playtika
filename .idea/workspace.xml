@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763cb234-990a-43a2-8ef2-a71ba01fd9a1" name="Default Changelist" comment="Added JUnit 5;&#10;Added ClusterTest / NodeTest classes;">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" afterDir="false" />
+    <list default="true" id="763cb234-990a-43a2-8ef2-a71ba01fd9a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/servers/ServerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playtika.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Playtika.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servers/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servers/Cluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servers/Failable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servers/Failable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servers/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servers/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servers/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/playtika/target/" />
@@ -72,30 +68,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="11" />
+          <entry key="java" value="23" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="23" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="2909" />
-          <entry key="txt" value="35" />
+          <entry key="java" value="5698" />
+          <entry key="txt" value="50" />
           <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2909" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="JAVA" value="5698" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="XML" value="36" />
         </counts>
       </usages-collector>
@@ -110,6 +108,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
@@ -119,60 +129,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/search/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servers/Cluster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servers/Failable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/servers/ClusterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1596">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2202#2203#0" expanded="true" />
-                <element signature="e#2299#2300#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AllTestsSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="189">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servers/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#267#268#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
@@ -192,8 +152,6 @@
                 <element signature="e#355#356#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
                 <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
                 <element signature="e#579#580#0" expanded="true" />
                 <element signature="e#603#604#0" expanded="true" />
                 <element signature="e#626#627#0" expanded="true" />
@@ -204,24 +162,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/servers/NodeTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servers/Cluster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="412">
+              <caret line="41" column="19" selection-start-line="41" selection-end-line="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/servers/ServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="186">
+              <caret line="40" selection-start-line="40" selection-end-line="51" selection-end-column="5" />
+              <folding>
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#4202#4203#0" expanded="true" />
+                <element signature="e#4292#4293#0" expanded="true" />
+                <element signature="e#4337#4338#0" expanded="true" />
+                <element signature="e#4426#4427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/servers/ClusterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="127" column="4" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4493#4494#0" expanded="true" />
+                <element signature="e#4585#4586#0" expanded="true" />
+                <element signature="e#5182#5183#0" expanded="true" />
+                <element signature="e#5273#5274#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servers/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+              <folding>
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#1251#1252#0" expanded="true" />
+                <element signature="e#1286#1287#0" expanded="true" />
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1800#1801#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/servers/NodeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -232,8 +256,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -244,6 +268,20 @@
       <find>prevIsFailed</find>
       <find>Fallible</find>
       <find>clusterToFail</find>
+      <find>firstInner</find>
+      <find>failRandomNode</find>
+      <find>NoDataException</find>
+      <find>emptyCluster.getSize();</find>
+      <find>emptyClusterSizeTest</find>
+      <find>emptyCluster.getSize()</find>
+      <find>cluster</find>
+      <find>cluster.</find>
+      <find>emptyCluster.getInnerFailable</find>
+      <find>Id of an empty</find>
+      <find>getInner</find>
+      <find>getInn</find>
+      <find>inner object should not be null</find>
+      <find>node.toString()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -270,13 +308,16 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/search/FailSearchEngine.java" />
         <option value="$PROJECT_DIR$/playtika/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/servers/Cluster.java" />
         <option value="$PROJECT_DIR$/src/main/java/servers/Failable.java" />
         <option value="$PROJECT_DIR$/src/test/java/allTestsSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servers/Cluster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servers/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servers/Server.java" />
+        <option value="$PROJECT_DIR$/src/test/java/servers/ServerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" />
       </list>
     </option>
   </component>
@@ -324,7 +365,83 @@
               <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
               <item name="Playtika" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.platform:junit-platform-commons:1.1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.platform:junit-platform-commons:1.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-platform-commons-1.1.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.platform:junit-platform-commons:1.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-platform-commons-1.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.platform:junit-platform-commons:1.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-platform-commons-1.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +451,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565905222734" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/Users/User/IdeaProjects/Playtika/src/main/java/Main.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566072851779" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -376,7 +494,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClusterTest.getFirstInnerFailableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
       <extension name="coverage">
         <pattern>
@@ -385,14 +503,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="servers" />
-      <option name="MAIN_CLASS_NAME" value="servers.ClusterTest" />
-      <option name="METHOD_NAME" value="getFirstInnerFailableTest" />
+      <option name="MAIN_CLASS_NAME" value="servers.NodeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest.failEmptyNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Playtika" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="servers" />
+      <option name="MAIN_CLASS_NAME" value="servers.NodeTest" />
+      <option name="METHOD_NAME" value="failEmptyNodeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClusterTest.getInnerFailableOfServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest.nodeToStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
       <extension name="coverage">
         <pattern>
@@ -401,14 +533,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="servers" />
-      <option name="MAIN_CLASS_NAME" value="servers.ClusterTest" />
-      <option name="METHOD_NAME" value="getInnerFailableOfServer" />
+      <option name="MAIN_CLASS_NAME" value="servers.NodeTest" />
+      <option name="METHOD_NAME" value="nodeToStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClusterTest.sendMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServerTest.initializeServerWithNegativeNodesCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
       <extension name="coverage">
         <pattern>
@@ -417,43 +549,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="servers" />
-      <option name="MAIN_CLASS_NAME" value="servers.ClusterTest" />
-      <option name="METHOD_NAME" value="sendMessageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClusterTest.serverToStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Playtika" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="servers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="servers" />
-      <option name="MAIN_CLASS_NAME" value="servers.ClusterTest" />
-      <option name="METHOD_NAME" value="serverToStringTest" />
+      <option name="MAIN_CLASS_NAME" value="servers.ServerTest" />
+      <option name="METHOD_NAME" value="initializeServerWithNegativeNodesCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.NodeTest" />
+      <item itemvalue="JUnit.NodeTest.failEmptyNodeTest" />
+      <item itemvalue="JUnit.ServerTest.initializeServerWithNegativeNodesCount" />
+      <item itemvalue="JUnit.NodeTest.nodeToStringTest" />
       <item itemvalue="JUnit.AllTestsSuite" />
-      <item itemvalue="JUnit.ClusterTest.getInnerFailableOfServer" />
-      <item itemvalue="JUnit.ClusterTest.getFirstInnerFailableTest" />
-      <item itemvalue="JUnit.ClusterTest.serverToStringTest" />
-      <item itemvalue="JUnit.ClusterTest.sendMessageTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AllTestsSuite" />
-        <item itemvalue="JUnit.ClusterTest.sendMessageTest" />
-        <item itemvalue="JUnit.ClusterTest.serverToStringTest" />
-        <item itemvalue="JUnit.ClusterTest.getFirstInnerFailableTest" />
-        <item itemvalue="JUnit.ClusterTest.getInnerFailableOfServer" />
+        <item itemvalue="JUnit.NodeTest.nodeToStringTest" />
+        <item itemvalue="JUnit.ServerTest.initializeServerWithNegativeNodesCount" />
+        <item itemvalue="JUnit.NodeTest" />
+        <item itemvalue="JUnit.NodeTest.failEmptyNodeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -475,46 +591,53 @@
       <option name="project" value="LOCAL" />
       <updated>1565899201034</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added JUnit 5;&#10;Added ClusterTest / NodeTest classes;">
+      <created>1565905309474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565905309474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTestsSuite - 2019.08.16 at 00h 20m 42s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="NodeTest_emptyNodeInnerTest - 2019.08.17 at 23h 00m 24s.xml">
+      <configuration name="NodeTest.emptyNodeInnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTestsSuite - 2019.08.16 at 00h 21m 09s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="NodeTest_emptyNodeInnerTest - 2019.08.17 at 23h 00m 39s.xml">
+      <configuration name="NodeTest.emptyNodeInnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTestsSuite - 2019.08.16 at 00h 22m 37s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="NodeTest_emptyNodeInnerTest - 2019.08.17 at 23h 00m 43s.xml">
+      <configuration name="NodeTest.emptyNodeInnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_getInnerFailableOfServer - 2019.08.16 at 00h 26m 35s.xml">
-      <configuration name="ClusterTest.getInnerFailableOfServer" configurationId="JUnit" />
+    <history-entry file="NodeTest - 2019.08.17 at 23h 00m 46s.xml">
+      <configuration name="NodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_getFirstInnerFailableTest - 2019.08.16 at 00h 27m 59s.xml">
-      <configuration name="ClusterTest.getFirstInnerFailableTest" configurationId="JUnit" />
+    <history-entry file="NodeTest_getNodeInnerFailableTest - 2019.08.17 at 23h 01m 28s.xml">
+      <configuration name="NodeTest.getNodeInnerFailableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_serverToStringTest - 2019.08.16 at 00h 31m 21s.xml">
-      <configuration name="ClusterTest.serverToStringTest" configurationId="JUnit" />
+    <history-entry file="NodeTest_failEmptyNodeTest - 2019.08.17 at 23h 01m 35s.xml">
+      <configuration name="NodeTest.failEmptyNodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_sendMessageTest - 2019.08.16 at 00h 36m 35s.xml">
-      <configuration name="ClusterTest.sendMessageTest" configurationId="JUnit" />
+    <history-entry file="NodeTest_failEmptyNodeTest - 2019.08.17 at 23h 01m 49s.xml">
+      <configuration name="NodeTest.failEmptyNodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_sendMessageTest - 2019.08.16 at 00h 38m 09s.xml">
-      <configuration name="ClusterTest.sendMessageTest" configurationId="JUnit" />
+    <history-entry file="NodeTest - 2019.08.17 at 23h 02m 01s.xml">
+      <configuration name="NodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClusterTest_sendMessageTest - 2019.08.16 at 00h 39m 38s.xml">
-      <configuration name="ClusterTest.sendMessageTest" configurationId="JUnit" />
+    <history-entry file="ServerTest_initializeServerWithNegativeNodesCount - 2019.08.17 at 23h 06m 36s.xml">
+      <configuration name="ServerTest.initializeServerWithNegativeNodesCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTestsSuite - 2019.08.16 at 00h 39m 42s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="ServerTest_initializeServerWithNegativeNodesCount - 2019.08.17 at 23h 08m 04s.xml">
+      <configuration name="ServerTest.initializeServerWithNegativeNodesCount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.153125" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.153125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -523,8 +646,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32825205" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27642277" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42682928" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2754065" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.17987806" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -549,7 +672,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added Maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Maven" />
+    <MESSAGE value="Added JUnit 5;&#10;Added ClusterTest / NodeTest classes;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JUnit 5;&#10;Added ClusterTest / NodeTest classes;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -581,10 +705,10 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/servers/ClusterTest.java</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/src/test/java/servers/ServerTest.java</url>
+          <line>120</line>
           <properties />
-          <option name="timeStamp" value="38" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -592,47 +716,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
+        <expression-string>emptyNode.getInnerFailable(0);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>emptyServer.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>emptyCluster.getId();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>servers.get(number);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>servers</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>server.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cluster.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cluster.getInnerFailable(1);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>server.getSize()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>failedServer</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clusterToFail</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getSizeTest()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>firstInner.toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>node.toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>node</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cluster.getSize()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cluster</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -674,27 +798,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playtika/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Playtika.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/allTests.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Failable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -709,17 +833,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="714">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AllTestsSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Cluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="41" column="19" selection-start-line="41" selection-end-line="42" />
+          <folding>
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servers/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
@@ -727,8 +893,6 @@
             <element signature="e#355#356#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
             <element signature="e#603#604#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
@@ -737,65 +901,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Cluster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="291">
+          <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
           <folding>
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Failable.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/servers/ServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allTests.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/servers/NodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="186">
+          <caret line="40" selection-start-line="40" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#4202#4203#0" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
+            <element signature="e#4337#4338#0" expanded="true" />
+            <element signature="e#4426#4427#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/servers/ClusterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1596">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="314">
+          <caret line="127" column="4" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2202#2203#0" expanded="true" />
-            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#4493#4494#0" expanded="true" />
+            <element signature="e#4585#4586#0" expanded="true" />
+            <element signature="e#5182#5183#0" expanded="true" />
+            <element signature="e#5273#5274#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AllTestsSuite.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/servers/NodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="370">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
           </folding>
         </state>
       </provider>

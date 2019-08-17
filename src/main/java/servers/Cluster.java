@@ -36,7 +36,11 @@ public class Cluster implements Failable {
 
     @Override
     public Failable getInnerFailable(int number) {
-        return servers.get(number);
+        if (servers.size() > number) {
+            return servers.get(number);
+        } else {
+            throw new NoDataException("Cannot get " + number + " inner Failable because servers size = " + servers.size());
+        }
     }
 
     @Override
