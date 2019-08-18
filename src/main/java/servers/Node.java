@@ -1,7 +1,5 @@
 package servers;
 
-import exceptions.NoDataException;
-
 public class Node implements Failable {
 
     private int id;
@@ -11,6 +9,10 @@ public class Node implements Failable {
     Node(int parentId, int id) {
         this.parentId = parentId;
         this.id = id;
+    }
+
+    public void setFailed(boolean failed) {
+        this.failed = failed;
     }
 
     @Override
@@ -29,7 +31,7 @@ public class Node implements Failable {
 
     @Override
     public Failable getInnerFailable(int number) {
-        throw new NoDataException("Cannot get inner from Node, Nodes doesn't have any inner child");
+        return null; // No inners
     }
 
     @Override

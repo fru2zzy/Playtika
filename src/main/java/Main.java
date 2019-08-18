@@ -1,32 +1,26 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import exceptions.DataNotFoundException;
 import exceptions.NoDataException;
 import search.FailSearchEngine;
 import search.Result;
 import servers.Cluster;
+import utils.GsonSerializer;
 
-import java.io.*;
+import java.io.IOException;
+
+import static utils.Const.DEFAULT_NODES_COUNT;
+import static utils.Const.DEFAULT_SERVERS_COUNT;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Cluster originalCluster = new Cluster(5, 3);
-        Gson gson = new GsonBuilder().create();
+        Cluster originalCluster = new Cluster(DEFAULT_SERVERS_COUNT, DEFAULT_NODES_COUNT);
 
         // Write our cluster into json file
-        Writer writer = new FileWriter("cluster.json");
-        gson.toJson(originalCluster, writer);
-        writer.flush();
-        writer.close();
+        GsonSerializer serializer = new GsonSerializer();
+        serializer.writeClusterToJSON(originalCluster);
 
         // Read our cluster from json file
-        FileReader reader = new FileReader("cluster.json");
-        Cluster cluster = gson.fromJson(reader, Cluster.class);
-        reader.close();
-
-        File file = new File("cluster.json");
-        file.delete();
+        Cluster cluster = serializer.readClusterFromJSON();
 
         cluster.sendMessage();
         System.out.println(cluster);
@@ -37,9 +31,10 @@ public class Main {
         try {
             result = searchEngine.findFail(cluster);
         } catch (NoDataException noDataException) {
-            System.out.println("Warning, no data provided, initialize by default values: serversCount = 3, nodesCount = 5");
+            System.out.println("Warning, no data provided, initialize by default values: serversCount = " +
+                    DEFAULT_SERVERS_COUNT + ", nodesCount = " + DEFAULT_NODES_COUNT);
 
-            cluster = new Cluster(3, 5);
+            cluster = new Cluster(DEFAULT_SERVERS_COUNT, DEFAULT_NODES_COUNT);
 
             cluster.sendMessage();
             result = searchEngine.findFail(cluster);

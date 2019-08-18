@@ -47,6 +47,7 @@ public class FailSearchEngine {
             System.out.println("We've reached last nested failed element (Node): in " + count + " iterations");
             result.setFailedServer(Optional.ofNullable(inner).isPresent() ? inner.getParentId() : -1);
             result.setFailedNode(Optional.ofNullable(inner).isPresent() ? inner.getId() : -1);
+            result.setIterationsCount(count);
         }
 
         if (result.isEmpty()) {
@@ -81,6 +82,7 @@ public class FailSearchEngine {
                     System.out.println("We've reached last nested failed element (Node) in " + count + " iterations");
                     result.setFailedServer(Optional.ofNullable(inner).isPresent() ? inner.getParentId() : -1);
                     result.setFailedNode(Optional.ofNullable(inner).isPresent() ? inner.getId() : -1);
+                    result.setIterationsCount(count);
                     break;
                 }
             }

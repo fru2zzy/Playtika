@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static utils.Const.DEFAULT_NODES_COUNT;
+import static utils.Const.DEFAULT_SERVERS_COUNT;
 
 public class ClusterTest {
 
@@ -13,13 +15,11 @@ public class ClusterTest {
     private static Cluster emptyCluster;
     private static Failable firstInner;
     private static Failable node;
-    private final static int serversCount = 3;
-    private final static int nodesCount = 5;
 
     @BeforeAll
     static void beforeClassClusterTest() {
-        cluster = new Cluster(serversCount, nodesCount);
-        clusterToFail = new Cluster(serversCount, nodesCount);
+        cluster = new Cluster(DEFAULT_SERVERS_COUNT, DEFAULT_NODES_COUNT);
+        clusterToFail = new Cluster(DEFAULT_SERVERS_COUNT, DEFAULT_NODES_COUNT);
         emptyCluster = new Cluster(0, 0);
         firstInner = cluster.getInnerFailable(0);
         node = firstInner.getInnerFailable(3);
@@ -46,13 +46,13 @@ public class ClusterTest {
         assertEquals(0, firstInner.getId(), "getId() from the first inner object should return '0'");
         assertEquals(0, firstInner.getParentId(), "getParentId() from the first inner object should return '0'");
         assertFalse(firstInner.isFailed(), "isFailed() from the first inner object should return 'false' because we didn't perform any disconnect");
-        assertEquals(nodesCount, firstInner.getSize(), "Size of inner objects from our Cluster inner should be equals to " + nodesCount + " (" + nodesCount + " Nodes in first Server)");
+        assertEquals(DEFAULT_NODES_COUNT, firstInner.getSize(), "Size of inner objects from our Cluster inner should be equals to " + DEFAULT_NODES_COUNT + " (" + DEFAULT_NODES_COUNT + " Nodes in first Server)");
     }
 
     @Test
     void getInnerFailableOfServer() {
         assertNotNull(node, "Node should not be null");
-        assertEquals(serversCount, node.getId(), "We've get 3rd innerFailable, so we should get node.getId() = " + serversCount);
+        assertEquals(DEFAULT_SERVERS_COUNT, node.getId(), "We've get 3rd innerFailable, so we should get node.getId() = " + DEFAULT_SERVERS_COUNT);
         assertEquals(0, node.getParentId(), "We've get 3rd innerFailable from the first server, so we should get node.getParentId() = 0");
         assertEquals(0, node.getParentId(), "isFailed() from the first node should return 'false' because we didn't perform any disconnect");
     }
@@ -63,7 +63,7 @@ public class ClusterTest {
         try {
             cluster.getInnerFailable(99);
         } catch (NoDataException e) {
-            assertEquals("Cannot get 99 inner Failable because servers size = " + serversCount, e.getMessage(),
+            assertEquals("Cannot get 99 inner Failable because servers size = " + DEFAULT_SERVERS_COUNT, e.getMessage(),
                     "We should receive correct 'NoDataException' after attempt of getting innerFailable");
             exceptionIsCatch = true;
         }
@@ -72,7 +72,7 @@ public class ClusterTest {
 
     @Test
     void getSizeTest() {
-        assertEquals(serversCount, cluster.getSize(), "We have " + serversCount + " servers in our Cluster");
+        assertEquals(DEFAULT_SERVERS_COUNT, cluster.getSize(), "We have " + DEFAULT_SERVERS_COUNT + " servers in our Cluster");
     }
 
     @Test
@@ -83,7 +83,7 @@ public class ClusterTest {
 
         Failable server = clusterToFail.getInnerFailable(0);
         assertNotNull(server, "Server after message sending should not be null");
-        assertEquals(nodesCount, server.getSize(), "Count of nodes shoul not change after message send");
+        assertEquals(DEFAULT_NODES_COUNT, server.getSize(), "Count of nodes shoul not change after message send");
         getOutOfBoundariesInnerFailableTest();
         serverToStringTest();
         nodeToStringTest();
