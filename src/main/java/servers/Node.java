@@ -1,5 +1,8 @@
 package servers;
 
+import static utils.Const.TEXT_DEFAULT;
+import static utils.Const.TEXT_RED;
+
 public class Node implements Failable {
 
     private int id;
@@ -45,6 +48,6 @@ public class Node implements Failable {
 
     @Override
     public String toString() {
-        return (failed ? "\u001B[31m" : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + (failed ? "\u001B[0m" : "");
+        return (failed ? TEXT_RED : "") + "Node{" + "id=" + id + ", parentId=" + parentId + ", failed=" + failed + '}' + (failed ? TEXT_DEFAULT : "");
     }
 }
