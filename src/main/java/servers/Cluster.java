@@ -62,6 +62,20 @@ public class Cluster implements Failable {
         }
     }
 
+    public void sendMessage(int serverToFail, int nodeToFail) {
+        failed = true;
+        if (getSize() == 0) {
+            throw new NoDataException("Cannot perform search in empty servers array!");
+        }
+
+        servers.get(serverToFail).failNode(nodeToFail);
+        if (serverToFail != getSize()) {
+            for (int i = serverToFail + 1; i < getSize(); i++) {
+                servers.get(i).failAllNodes();
+            }
+        }
+    }
+
     @Override
     public String toString() {
         return "Cluster{failed=" + failed + ", servers=" + servers + '}';

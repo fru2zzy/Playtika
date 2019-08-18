@@ -5,19 +5,19 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static utils.Const.DEFAULT_NODES_COUNT;
+import static utils.Const.DEFAULT_SERVERS_COUNT;
 
 public class ServerTest {
 
     private static Failable firstInner;
     private static Failable server;
     private static Failable emptyServer;
-    private final static int serversCount = 3;
-    private final static int nodesCount = 5;
     private final static int serverId = 2;
 
     @BeforeAll
     static void beforeClassServerTest() {
-        Cluster cluster = new Cluster(serversCount, nodesCount);
+        Cluster cluster = new Cluster(DEFAULT_SERVERS_COUNT, DEFAULT_NODES_COUNT);
         server = cluster.getInnerFailable(serverId);
         emptyServer = new Server(0, 0, 0);
         firstInner = server.getInnerFailable(0);
@@ -62,12 +62,12 @@ public class ServerTest {
 
     @Test
     void getSizeTest() {
-        assertEquals(nodesCount, server.getSize(), "We have " + nodesCount + " nodes in our Server");
+        assertEquals(DEFAULT_NODES_COUNT, server.getSize(), "We have " + DEFAULT_NODES_COUNT + " nodes in our Server");
     }
 
     @Test
     void failRandomNodeTest() {
-        Server serverToFail = new Server(0, 0, nodesCount);
+        Server serverToFail = new Server(0, 0, DEFAULT_NODES_COUNT);
         assertFalse(serverToFail.isFailed(), "newly created 'Server' should be initialized with 'failed' = false value");
         serverToFail.failRandomNode();
         assertTrue(serverToFail.isFailed(), "After calling failRandomNode() method 'Server' should have 'failed' = true value");
@@ -83,7 +83,7 @@ public class ServerTest {
 
     @Test
     void failAllNodesTest() {
-        Server serverToFail = new Server(0, 0, nodesCount);
+        Server serverToFail = new Server(0, 0, DEFAULT_NODES_COUNT);
         assertFalse(serverToFail.isFailed(), "newly created 'Server' should be initialized with 'failed' = false value");
         serverToFail.failAllNodes();
         assertTrue(serverToFail.isFailed(), "After calling failAllNodes() method 'Server' should have 'failed' = true value");

@@ -4,6 +4,7 @@ public class Result {
 
     private int failedServer;
     private int failedNode;
+    private int iterationsCount;
     private boolean isEmpty = true;
 
     Result() {
@@ -19,8 +20,24 @@ public class Result {
         this.failedNode = failedNode;
     }
 
+    void setIterationsCount(int iterationsCount) {
+        this.iterationsCount = iterationsCount;
+    }
+
     boolean isEmpty() {
         return isEmpty;
+    }
+
+    int getFailedServer() {
+        return failedServer;
+    }
+
+    int getFailedNode() {
+        return failedNode;
+    }
+
+    int getIterationsCount() {
+        return iterationsCount;
     }
 
     @Override

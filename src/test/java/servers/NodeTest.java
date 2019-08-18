@@ -1,6 +1,5 @@
 package servers;
 
-import exceptions.NoDataException;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -19,15 +18,8 @@ public class NodeTest {
 
     @Test
     void getNodeInnerFailableTest() {
-        boolean exceptionIsCatch = false;
-        try {
-            emptyNode.getInnerFailable(0);
-        } catch (NoDataException e) {
-            assertEquals("Cannot get inner from Node, Nodes doesn't have any inner child", e.getMessage(),
-                    "Exception Message is incorrect after getting some inner of empty Node");
-            exceptionIsCatch = true;
-        }
-        assertTrue(exceptionIsCatch, "We should get an 'NoDataException' after getting some inner of empty Node");
+        Failable nodeInner = node.getInnerFailable(0);
+        assertNull(nodeInner, "Node item doesn't have any inners, it should return null in case of node.getInnerFailable");
     }
 
     @Test
@@ -65,19 +57,6 @@ public class NodeTest {
         Node nodeToFail = new Node(0, 0);
         nodeToFail.failNode();
         assertTrue(nodeToFail.isFailed(), "After calling node.failNode() field 'failed' should be become true");
-    }
-
-    @Test
-    void failEmptyNodeTest() {
-        boolean exceptionIsCatch = false;
-        try {
-            emptyNode.getInnerFailable(0);
-        } catch (NoDataException e) {
-            assertEquals("Cannot get inner from Node, Nodes doesn't have any inner child", e.getMessage(),
-                    "Exception Message is incorrect after getting some inner of empty Server");
-            exceptionIsCatch = true;
-        }
-        assertTrue(exceptionIsCatch, "We should get an 'NoDataException' after getting some inner of empty Server");
     }
 
     ///// toString tests /////

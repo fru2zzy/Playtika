@@ -27,6 +27,10 @@ public class Server implements Failable {
         }
     }
 
+    public void setFailed(boolean failed) {
+        this.failed = failed;
+    }
+
     @Override
     public int getId() {
         return id;
@@ -60,6 +64,13 @@ public class Server implements Failable {
         this.failed = true;
         int randomNode = random.nextInt(getSize());
         for (int i = randomNode; i < getSize(); i++) {
+            nodes.get(i).failNode();
+        }
+    }
+
+    void failNode(int nodeToFail) {
+        this.failed = true;
+        for (int i = nodeToFail; i < getSize(); i++) {
             nodes.get(i).failNode();
         }
     }
