@@ -84,9 +84,6 @@ public class Game {
             String[] arr = field[i];
             result += Arrays.toString(arr) + (i == field.length - 1 ? "" : "\n"); // Do not add new line ('\n') at the end
         }
-//        for (String[] arr : field) {
-//            result += Arrays.toString(arr) + "\n";
-//        }
         return result;
     }
 
