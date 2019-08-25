@@ -10,8 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="playtika" target="1.5" />
-      <module name="Playtika" target="8" />
+      <module name="Playtika" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

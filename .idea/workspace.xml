@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763cb234-990a-43a2-8ef2-a71ba01fd9a1" name="Default Changelist" comment="">
+    <list default="true" id="077223ed-33fb-4541-8133-fd8bc56b23ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Playtika.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playtika.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Playtika.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/ClusterItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/Failable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/NodeItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playtika/ServerItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/DataNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/NoDataException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/search/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servers/Cluster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servers/Failable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servers/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servers/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/GsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GsonSerializerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/search/FailSearchEngineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/search/ResultTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/servers/ServerTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/playtika/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,119 +46,96 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="298370666">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="24" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="24" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages">
-        <counts>
-          <entry key="git.branch.checkout.remote" value="1" />
-          <entry key="git.branch.compare" value="14" />
-          <entry key="git.branch.delete.local" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="8" />
-          <entry key="java" value="4118" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4118" />
-          <entry key="PLAIN_TEXT" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
     <session id="-1754638580">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="64" />
-          <entry key="xml" value="6" />
+          <entry key="class" value="3" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="64" />
-          <entry key="XML" value="6" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="1" />
-          <entry key="java" value="10223" />
-          <entry key="txt" value="184" />
-          <entry key="xml" value="65" />
+          <entry key="java" value="2124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10223" />
-          <entry key="PLAIN_TEXT" value="185" />
-          <entry key="XML" value="65" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages">
-        <counts>
-          <entry key="git.branch.compare" value="1" />
-          <entry key="git.branch.delete.local" value="1" />
-          <entry key="git.branch.rename" value="2" />
+          <entry key="JAVA" value="2124" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AllTestsSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5140625">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/GameSpec.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                  <folding>
+                    <element signature="e#1648#1649#0" expanded="true" />
+                    <element signature="e#1679#1680#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#228#229#0" expanded="true" />
+                    <element signature="e#256#257#0" expanded="true" />
+                    <element signature="e#426#427#0" expanded="true" />
+                    <element signature="e#455#456#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="305">
+                  <caret line="77" column="9" lean-forward="true" selection-end-line="102" />
+                  <folding>
+                    <element signature="e#201#202#0" expanded="true" />
+                    <element signature="e#229#230#0" expanded="true" />
+                    <element signature="e#264#265#0" expanded="true" />
+                    <element signature="e#298#299#0" expanded="true" />
+                    <element signature="e#334#335#0" expanded="true" />
+                    <element signature="e#366#367#0" expanded="true" />
+                    <element signature="e#426#427#0" expanded="true" />
+                    <element signature="e#455#456#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,78 +148,17 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getNodeItemByID</find>
-      <find>failed</find>
-      <find>prevIsFailed</find>
-      <find>Fallible</find>
-      <find>clusterToFail</find>
-      <find>firstInner</find>
-      <find>failRandomNode</find>
-      <find>NoDataException</find>
-      <find>emptyCluster.getSize();</find>
-      <find>emptyClusterSizeTest</find>
-      <find>emptyCluster.getSize()</find>
-      <find>cluster.</find>
-      <find>emptyCluster.getInnerFailable</find>
-      <find>Id of an empty</find>
-      <find>getInner</find>
-      <find>getInn</find>
-      <find>inner object should not be null</find>
-      <find>node.toString()</find>
-      <find>emptyServer</find>
-      <find>&quot;cluster.json&quot;</find>
-      <find>iterations</find>
-      <find>cluster</find>
-      <find>failedClusterWithMidNode</find>
-      <find>failedClusterWithFirstNode</find>
-      <find>DEFAULT_SERVERS_COUNT - 1</find>
-      <find>3</find>
+      <find>filled</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="HomeWork3_GSON+Tests" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FailSearchEngine.java" />
-        <option value="$PROJECT_DIR$/src/FallibleWithInners.java" />
-        <option value="$PROJECT_DIR$/src/servers/FallibleWithInners.java" />
-        <option value="$PROJECT_DIR$/src/servers/Failable.java" />
-        <option value="$PROJECT_DIR$/src/servers/Node.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/DataNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/NoDataException.java" />
-        <option value="$PROJECT_DIR$/src/servers/Cluster.java" />
-        <option value="$PROJECT_DIR$/src/servers/Server.java" />
-        <option value="$PROJECT_DIR$/src/search/Result.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/search/FailSearchEngine.java" />
-        <option value="$PROJECT_DIR$/playtika/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/servers/Failable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/allTestsSuite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GsonSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/GsonSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Const.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GsonSerializerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/servers/ClusterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servers/Node.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servers/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servers/Cluster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/search/Result.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AllTestsSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/servers/NodeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/servers/ServerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/search/ResultTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/search/FailSearchEngineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameSpec.java" />
       </list>
     </option>
   </component>
@@ -226,7 +174,7 @@
     <option name="width" value="1166" />
     <option name="height" value="1052" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -235,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,38 +212,6 @@
               <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
               <item name="Playtika" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -305,55 +220,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Playtika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Playtika" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/Users/User/IdeaProjects/Playtika/src/main/java/Main.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566125648653" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.19259259" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="search" />
-      <recent name="" />
-      <recent name="servers" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\Playtika\src\test\java" />
-      <recent name="C:\Users\User\IdeaProjects\Playtika\src\test" />
-      <recent name="C:\Users\User\IdeaProjects\Playtika\src\main\resources" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566765621705" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -367,84 +244,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Playtika" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTestsSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameSpec">
+    <configuration name="GameSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllTestsSuite" />
+      <option name="MAIN_CLASS_NAME" value="GameSpec" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.setFailedNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameSpec.fieldShouldBeFilledAfterStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="search" />
-      <option name="MAIN_CLASS_NAME" value="search.ResultTest" />
-      <option name="METHOD_NAME" value="setFailedNodeTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameSpec" />
+      <option name="METHOD_NAME" value="fieldShouldBeFilledAfterStep" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.setIterationsCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameSpec.gameToStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="search" />
-      <option name="MAIN_CLASS_NAME" value="search.ResultTest" />
-      <option name="METHOD_NAME" value="setIterationsCountTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameSpec" />
+      <option name="METHOD_NAME" value="gameToStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameSpec.printFieldAfterMoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Playtika" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="search" />
-      <option name="MAIN_CLASS_NAME" value="search.ResultTest" />
-      <option name="METHOD_NAME" value="toStringTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameSpec" />
+      <option name="METHOD_NAME" value="printFieldAfterMoveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameSpec.printFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Playtika" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameSpec" />
+      <option name="METHOD_NAME" value="printFieldTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AllTestsSuite" />
-      <item itemvalue="JUnit.ResultTest.setFailedNodeTest" />
-      <item itemvalue="JUnit.ResultTest.setIterationsCountTest" />
-      <item itemvalue="JUnit.ResultTest.toStringTest" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.GameSpec" />
+      <item itemvalue="JUnit.GameSpec.printFieldAfterMoveTest" />
+      <item itemvalue="JUnit.GameSpec.fieldShouldBeFilledAfterStep" />
+      <item itemvalue="JUnit.GameSpec.printFieldTest" />
+      <item itemvalue="JUnit.GameSpec.gameToStringTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AllTestsSuite" />
-        <item itemvalue="JUnit.ResultTest.toStringTest" />
-        <item itemvalue="JUnit.ResultTest.setFailedNodeTest" />
-        <item itemvalue="JUnit.ResultTest.setIterationsCountTest" />
+        <item itemvalue="JUnit.GameSpec" />
+        <item itemvalue="JUnit.GameSpec.gameToStringTest" />
+        <item itemvalue="JUnit.GameSpec.printFieldTest" />
+        <item itemvalue="JUnit.GameSpec.printFieldAfterMoveTest" />
+        <item itemvalue="JUnit.GameSpec.fieldShouldBeFilledAfterStep" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +315,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="763cb234-990a-43a2-8ef2-a71ba01fd9a1" name="Default Changelist" comment="" />
+      <changelist id="077223ed-33fb-4541-8133-fd8bc56b23ba" name="Default Changelist" comment="" />
       <created>1564002131765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -487,45 +349,45 @@
       <option name="project" value="LOCAL" />
       <updated>1566121226705</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResultTest_setFailedServerTest - 2019.08.18 at 11h 56m 01s.xml">
-      <configuration name="ResultTest.setFailedServerTest" configurationId="JUnit" />
+    <history-entry file="GameSpec_printFieldAfterMoveTest - 2019.08.25 at 23h 30m 08s.xml">
+      <configuration name="GameSpec.printFieldAfterMoveTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_setFailedNodeTest - 2019.08.18 at 11h 57m 08s.xml">
-      <configuration name="ResultTest.setFailedNodeTest" configurationId="JUnit" />
+    <history-entry file="GameSpec_printFieldTest - 2019.08.25 at 23h 34m 30s.xml">
+      <configuration name="GameSpec.printFieldTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_setFailedNodeTest - 2019.08.18 at 11h 57m 21s.xml">
-      <configuration name="ResultTest.setFailedNodeTest" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 34m 33s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_setIterationsCountTest - 2019.08.18 at 12h 00m 35s.xml">
-      <configuration name="ResultTest.setIterationsCountTest" configurationId="JUnit" />
+    <history-entry file="GameSpec_gameToStringTest - 2019.08.25 at 23h 34m 56s.xml">
+      <configuration name="GameSpec.gameToStringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_setFailedNodeTest - 2019.08.18 at 12h 01m 06s.xml">
-      <configuration name="ResultTest.setFailedNodeTest" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 36m 47s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_toStringTest - 2019.08.18 at 12h 15m 07s.xml">
-      <configuration name="ResultTest.toStringTest" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 37m 14s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_toStringTest - 2019.08.18 at 12h 15m 16s.xml">
-      <configuration name="ResultTest.toStringTest" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 37m 31s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultTest_toStringTest - 2019.08.18 at 12h 15m 30s.xml">
-      <configuration name="ResultTest.toStringTest" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 37m 53s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTestsSuite - 2019.08.18 at 12h 17m 45s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 38m 00s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTestsSuite - 2019.08.18 at 12h 40m 51s.xml">
-      <configuration name="AllTestsSuite" configurationId="JUnit" />
+    <history-entry file="GameSpec - 2019.08.25 at 23h 38m 09s.xml">
+      <configuration name="GameSpec" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.153125" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.153125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -534,8 +396,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32825205" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34146342" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3678862" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34146342" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36890244" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -556,406 +418,138 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added Maven" />
-    <MESSAGE value="Added JUnit 5;&#10;Added ClusterTest / NodeTest classes;" />
-    <MESSAGE value="Added ServerTest and some another tests" />
-    <MESSAGE value="Finished test suite;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished test suite;" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/search/FailSearchEngineTest.java</url>
-          <line>81</line>
+          <url>file://$PROJECT_DIR$/src/test/java/GameSpec.java</url>
+          <line>154</line>
           <properties />
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GameSpec.java</url>
+          <line>163</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GameSpec.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GameSpec.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Game.java</url>
+          <line>80</line>
+          <properties class="Game" method="printFiled">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>failedClusterWithFirstNode</expression-string>
+        <expression-string>game.printFiled()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>failedClusterWithLastNode</expression-string>
+        <expression-string>game.getField().toString();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(DEFAULT_SERVERS_COUNT / 2);</expression-string>
+        <expression-string>game.toString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>DEFAULT_SERVERS_COUNT</expression-string>
+        <expression-string>game.getField()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>midServerIndex</expression-string>
+        <expression-string>Arrays.deepToString(field).replaceAll(&quot;],&quot;, &quot;\n&quot;);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(DEFAULT_SERVERS_COUNT / 2)</expression-string>
+        <expression-string>Arrays.deepToString(field).replaceAll(&quot;,&quot;, &quot;\n&quot;);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>clusterFromFile.toString().equals(cluster.toString())</expression-string>
+        <expression-string>Arrays.deepToString(field);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>clusterFromFile.equals(cluster.toString())</expression-string>
+        <expression-string>game.getField().toString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>clusterFromFile.equals(cluster)</expression-string>
+        <expression-string>game.getField();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/DataNotFoundException.java" />
-    <entry file="file://$PROJECT_DIR$/src/ClusterItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/NodeItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/ServerItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/Ьфшт.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="608" column="38" selection-start-line="608" selection-start-column="38" selection-end-line="608" selection-end-column="38" />
+        <state relative-caret-position="198">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dto/NodeItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/dto/ServerItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/SuccessException.java" />
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/NoDataException.java" />
-    <entry file="file://$PROJECT_DIR$/src/dto/ClusterItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/Cluster.java" />
-    <entry file="file://$PROJECT_DIR$/src/Failable.java" />
-    <entry file="file://$PROJECT_DIR$/src/FailSearchEngine.java" />
-    <entry file="file://$PROJECT_DIR$/playtika/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/Playtika.iml">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allTests.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.1.1/junit-platform-commons-1.1.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/ExpectException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        <state relative-caret-position="504">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Files.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="3200" column="31" selection-start-line="3200" selection-start-column="31" selection-end-line="3200" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Failable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NoDataException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/DataNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/GsonSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="396">
+          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="252">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#1648#1649#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding>
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GsonSerializerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/servers/ClusterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2082">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers/Cluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="64" column="27" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="27" />
-          <folding>
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/search/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/search/ResultTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/search/FailSearchEngineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-          <folding>
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3211#3212#0" expanded="true" />
-            <element signature="e#3300#3301#0" expanded="true" />
-            <element signature="e#3456#3457#0" expanded="true" />
-            <element signature="e#3523#3524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/servers/ServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="118" selection-start-line="118" selection-end-line="118" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/servers/NodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/search/FailSearchEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AllTestsSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.6 interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Playtika</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19259259" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19259259" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.google.code.gson:gson:2.8.5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
