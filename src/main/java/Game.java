@@ -34,7 +34,7 @@ public class Game {
         this.x = x;
         this.y = y;
         if (x > 2 || x < 0 || y > 2 || y < 0) {
-            throw new IllegalArgumentException("You've entered invalid coordinates, they must be in range 0...2");
+            throw new IllegalArgumentException("You've entered invalid coordinates, they must be in range 1...3");
         }
 
         String player = selectPlayer();
