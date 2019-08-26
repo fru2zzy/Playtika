@@ -66,7 +66,7 @@ public class GameSpec {
         game.step(1, 1);
     }
 
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void mustNotSetOutOfBoundsOfField() {
         game.step(5, 5);
     }
@@ -135,7 +135,7 @@ public class GameSpec {
             assertEquals("Game should be ended on " + finishStep + " step", game.getStepCounter(), finishStep);
             assertEquals("Payer 'X' should win the game", game.getPlayer(), "X");
 
-            throw new GameAlreadyEndedException();
+            throw new GameAlreadyEndedException("");
         }
     }
 
@@ -154,7 +154,7 @@ public class GameSpec {
             assertEquals("Game should be ended on " + finishStep + " step", game.getStepCounter(), finishStep);
             assertEquals("Payer 'O' should win the game", game.getPlayer(), "O");
 
-            throw new GameAlreadyEndedException();
+            throw new GameAlreadyEndedException("");
         }
     }
 

@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class Game {
 
+    private int x;
+    private int y;
     private boolean gameEnded;
     private String player;
     private int stepCounter = 0;
@@ -24,7 +26,17 @@ public class Game {
         return player;
     }
 
+    public void setPlayer(String player) {
+        this.player = player;
+    }
+
     public void step(int x, int y) {
+        this.x = x;
+        this.y = y;
+        if (x > 2 || x < 0 || y > 2 || y < 0) {
+            throw new IllegalArgumentException("You've entered invalid coordinates, they must be in range 0...2");
+        }
+
         String player = selectPlayer();
 
         checkIfFilled(field[x][y]);
@@ -33,7 +45,7 @@ public class Game {
 
         calculateEndOfTheGame();
         if (gameEnded) {
-            throw new GameAlreadyEndedException();
+            throw new GameAlreadyEndedException("Player '" + getPlayer() + "' won the game");
         }
 
         stepCounter++;
@@ -52,6 +64,7 @@ public class Game {
 
         // Line and Column verification
         for (int i = 0; i < field.length; i++) {
+            //boolean nonEmpty = !field[i][0].equals("") && !field[i][1].equals("") && !field[i][2].equals("");
             if ((field[i][0].equals(field[i][1]) && field[i][1].equals(field[i][2])) && !field[i][2].equals("")) { // X O -
                 gameEnded = true;                                                                                  // X - -
                 System.out.println("Win by column by player " + player);                                           // X O -
@@ -63,7 +76,7 @@ public class Game {
         }
     }
 
-    private String selectPlayer() {
+    String selectPlayer() {
         if (stepCounter % 2 == 0) {
             player = "X";
         } else {
@@ -74,7 +87,7 @@ public class Game {
 
     private void checkIfFilled(String s) {
         if (!s.equals("")) {
-            throw new AlreadyFilledFieldException();
+            throw new AlreadyFilledFieldException("Field by coordinates '" + x + ", " + y + "' already filled by '" + s + "' player");
         }
     }
 
